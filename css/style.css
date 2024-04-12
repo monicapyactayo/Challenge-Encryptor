@@ -1,0 +1,267 @@
+*{
+    font-family: 'Poppins', sans-serif;;
+}
+
+body{
+    background: #F3F5FC;
+}
+
+header{
+    position: relative;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+}
+
+.logo-alura{
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.titulo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55%;
+}
+
+.titulo-principal h1{
+    font-size: 1.5em;
+}
+
+main{
+    display: flex;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* Estilos para la sección de ingresar texto */
+.ingresar-texto{
+    display: block;
+    width: 80%;
+}
+
+.ingresar-texto p{
+    margin: 1px 0;
+}
+
+.txtarea-ingresar{
+    width: 85%;
+    resize: none;
+    border: none;
+    font-size: 1.5em;
+    color: #0A3871;
+    background: none;
+}
+
+.txtarea-ingresar::placeholder{
+    color: #0A3871;
+}
+
+.txtarea-ingresar:focus{
+    outline: none !important;
+}
+
+
+/* Estilos para la sección de resultado */
+.resultado{
+    position: absolute;
+    top: -90px;
+    left: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 600px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.container-resultado{
+    text-align: center;
+}
+
+.before-resultado{
+    width: 300px;
+}
+
+.before-resultado h2{
+    margin: 20px 0;
+    font-size: 1.4em;
+}
+
+.before-resultado img{
+    text-align: center;
+    width: 80%;
+}
+
+.texto-resultado{
+    display: none;
+}
+
+.txtarea-resultado{
+    width: 350px;
+    height: 450px;
+    resize: none;
+    border: none;
+    background: none;
+    color: #495057;
+    font-size: 1.3em;
+}
+
+.txtarea-resultado:focus{
+    outline: none !important;
+}
+
+/* Estilos de los botones */
+
+.btn-encriptar,
+.btn-desencriptar,
+.btn-copiar{
+    width: 300px;
+    height: 67px;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 1.2em; 
+    background: none;
+    margin: 20px 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.btn-copiar:hover{
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+/* Estilos para el footer */
+
+footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    margin: 50px 50px 0 0px;
+
+}
+
+.iconos{
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+.iconos i{
+    font-size: 2em;
+    color:#0A3871;
+    transition: all 0.3s;
+}
+
+.iconos i:hover{
+    color:#5d8cc7;
+}
+
+
+/* Cambios responsivos */
+
+@media screen and (max-width: 820px){
+    main{
+        display: block;
+        width: 90%;
+    }
+
+    .ingresar-texto{
+        width: 100%;
+    }
+
+    .txtarea-ingresar{
+        width: 100%;
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+
+    .resultado{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .before-resultado img{
+        display: none;
+    }
+
+    .before-resultado{
+        margin: 40px 0;
+    }
+
+    /* .texto-resultado{
+        display: block;
+    } */
+
+    .txtarea-resultado{
+        width: 95%;
+        height: 200px;
+        margin-top: 20px;
+        font-size: 1.2em;
+    }
+    .botones{
+        width: 100%;
+        text-align: center;
+    }
+    .btn-encriptar,
+    .btn-desencriptar,
+    .btn-copiar{
+        width: 40%;
+        height: 60px;
+        font-size: 1em;
+    }
+    
+    .btn-copiar{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .logo-alura{
+        width: 30%;
+        padding: 20px 0;
+    }
+    .botones{
+        display: block;
+        text-align: center;
+    }
+    .btn-encriptar,
+    .btn-desencriptar,
+    .btn-copiar{
+        width: 90%;
+        height: 60px;
+        font-size: 1em;
+    }   
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+
+    footer p{
+        margin: 50px 0 0 0;
+    }
+
+    .iconos{
+        margin: 20px 0 0 0;
+    }
+}

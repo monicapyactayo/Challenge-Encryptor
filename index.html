@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tu descripción aquí">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Challenge Encryptor</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo-alura" src="img/logo-alura.png" alt="Logo de Alura">
+            <div class="titulo-principal">
+                <h1>Challenge Encryptor</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="ingresar-texto">
+            <textarea class="txtarea-ingresar" id="txtarea-ingresar" cols="30" rows="10" placeholder="Please enter your text here"></textarea>
+            <p class="aviso-letras">⚠️ Only lower case letters and no accents.</p>
+            <div class="botones">
+                <button class="btn-encriptar" id="btn-encriptar">Encrypt</button>
+                <button class="btn-desencriptar" id="btn-desencriptar">Decrypt</button>
+            </div>
+        </section>
+        <section class="resultado">
+            <article class="container-resultado">
+                <div class="before-resultado" id="before-resultado">
+                    <img src="img/munheco.png" alt="Image of a person with a magnifying glass">
+                    <h2 class="titulo-resultado">No message was found</h2>
+                    <p>Enter the text you wish to encrypt or decrypt.</p>
+                </div>
+                <div class="texto-resultado" id="texto-resultado">
+                    <textarea class="txtarea-resultado" id="txtarea-resultado" cols="30" rows="10" disabled></textarea>
+                    <button class="btn-copiar" id="btn-copiar">Copy</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>2024 monicapyactayo | All Rights Reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
